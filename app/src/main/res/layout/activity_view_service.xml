@@ -1,0 +1,245 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.narasim.jm_solution_client.ViewService">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Username :" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Service :" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Token :"
+        android:layout_marginTop="90dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:text="Mobile :" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:text="Booked Date :" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tokenname :"
+        android:visibility="gone"
+        android:layout_marginTop="310dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:text="Contact Name :" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:visibility="gone"
+        android:text="Status Update :" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:visibility="gone"
+        android:text="Token Name :" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="Feedback :" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:text="Your Thoughts :" />
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="260dp"-->
+        <!--android:text="Booking Date" />-->
+
+    <EditText
+        android:id="@+id/editTextId"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:background="#fff"
+        android:enabled="false"
+        android:visibility="gone"
+        android:hint="id" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:editable="false"
+        android:hint="username :" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextService"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="130dp"
+        android:hint="service :"
+        android:editable="false"
+        android:background="#fff"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextToken"
+        android:layout_marginTop="90dp"
+        android:editable="false"
+        android:layout_marginLeft="130dp"
+        android:hint="token :"
+        android:background="#fff"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextStatus"
+        android:layout_marginTop="90dp"
+        android:editable="false"
+        android:layout_marginLeft="170dp"
+        android:hint="Status"
+        android:background="#fff"/>
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:hint="mobile"
+        android:editable="false"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="130dp"
+        android:id="@+id/editTextMobile" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:hint="Booked Date"
+        android:editable="false"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="130dp"
+        android:id="@+id/editTextBookdate" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:hint="Token Name"
+        android:editable="false"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="130dp"
+        android:id="@+id/editTextTokenname" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:editable="false"
+        android:hint="Contact Name"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="130dp"
+        android:id="@+id/editTextConname" />
+
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="#fff"-->
+        <!--android:hint="Book Date"-->
+        <!--android:layout_marginTop="300dp"-->
+        <!--android:layout_marginLeft="130dp"-->
+        <!--android:id="@+id/editTextBookdate" />-->
+
+    <!--Spinner-->
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+android:visibility="gone"
+        android:hint="Status"
+        android:entries="@array/status_arrayedit"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="130dp"
+        android:id="@+id/spinnerStatus" />
+
+    <!--Spinner-->
+
+    <!--Spinner-->
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:hint="Feedback"
+        android:layout_marginTop="250dp"
+        android:entries="@array/feed_array"
+        android:layout_marginLeft="130dp"
+        android:id="@+id/spinnerFeed" />
+    <!--Spinner-->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:hint="Your thoughts"
+        android:maxLength="150"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="130dp"
+        android:id="@+id/editTextHint" />
+
+
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Update Service"
+    android:layout_marginTop="400dp"
+    android:id="@+id/buttonUpdate" />
+
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Delete Employee"
+    android:visibility="gone"
+    android:id="@+id/buttonDelete" />
+
+
+
+</RelativeLayout>

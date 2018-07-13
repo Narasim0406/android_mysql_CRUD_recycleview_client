@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.narasim.jm_solution_client">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/customer1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/customer1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="MainActivity" />
+
+        <activity android:name=".MainActivity" android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity" android:screenOrientation="nosensor"/>
+
+        <activity android:name=".ProfileActivity" android:screenOrientation="nosensor"/>
+
+        <activity
+            android:name=".VerifyOtp"
+            android:parentActivityName=".LoginActivity" android:screenOrientation="nosensor"/>
+
+        <activity
+            android:name=".ResetOtp"
+            android:parentActivityName=".LoginActivity" android:screenOrientation="nosensor"/>
+
+        <activity
+            android:name=".ViewComplaintActivity"
+            android:parentActivityName=".MainActivity" android:screenOrientation="nosensor"/>
+
+        <activity
+            android:name=".AddComplaintActivity"
+            android:parentActivityName=".MainActivity" android:screenOrientation="nosensor"/>
+
+        <activity android:name=".ViewAllProduct"
+            android:parentActivityName=".ViewComplaintActivity" android:screenOrientation="nosensor"/>
+
+        <activity android:name=".ViewProduct"
+            android:parentActivityName=".ViewAllProduct" android:screenOrientation="nosensor"/>
+
+        <activity android:name=".ViewAllService"
+            android:parentActivityName=".ViewComplaintActivity" android:screenOrientation="nosensor"/>
+
+        <activity android:name=".ViewService"
+            android:parentActivityName=".ViewAllService" android:screenOrientation="nosensor"/>
+
+        <activity android:name=".FeedBack"  android:screenOrientation="nosensor"/>
+
+        <activity android:name=".ServiceActivity" android:parentActivityName=".ProfileActivity" android:screenOrientation="nosensor"/>
+
+        <activity android:name=".Otp"  android:screenOrientation="nosensor"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context="com.example.narasim.jm_solution_client.ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignBaseline="@+id/textViewUsername1"
+        android:layout_alignBottom="@+id/textViewUsername1"
+        android:layout_alignStart="@+id/textViewUsername1"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logout"
+            android:gravity="center"
+            android:radius="15dp"
+            android:text="@string/logout"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="295dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="71dp"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+
+        <Button
+            android:id="@+id/buttonadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape"
+            android:onClick="AddComplaint"
+            android:text="New Orders"
+            android:textColor="#fff" />
+
+
+        <Button
+            android:id="@+id/buttonservice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape"
+            android:onClick="Service"
+            android:text="Book Your Service"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/buttonstatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:onClick="ViewStatus"
+            android:text="@string/status"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewGender"
+        android:layout_alignTop="@+id/textView5"
+        android:padding="10dp"
+        android:text="@string/probelalkhan_gmail_com"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewGender"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewUsername1"
+        android:layout_alignTop="@+id/textView2"
+        android:padding="12dp"
+        android:text="@string/male"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewUsername1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="13dp"
+        android:padding="10dp"
+        android:text="@string/gender"
+        android:textAlignment="gravity"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:padding="10dp"
+        android:text="@string/email"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/textViewUsername1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="-"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/probelalkhan"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        tools:ignore="DuplicateIds" />
+
+
+
+</RelativeLayout>

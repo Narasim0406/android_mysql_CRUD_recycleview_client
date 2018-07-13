@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context="com.example.narasim.jm_solution_client.ServiceActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:background="@drawable/bg1"
+        android:padding="50dp">
+
+    <EditText
+        android:id="@+id/textViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:editable="false"
+        android:ems="10"
+        android:hint="ID"
+        android:layout_marginBottom="10dp"
+        android:padding="8dp"
+        android:textSize="14sp"
+        android:visibility="gone"
+        />
+    <EditText
+        android:id="@+id/textViewUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Username"
+        android:padding="8dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="14sp"
+        android:visibility="gone"
+        />
+
+
+    <Spinner
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:ems="10"
+        android:entries="@array/booking_type"
+        android:hint="Service Type"
+        android:padding="8dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:ems="10"
+        android:hint="Booking Date"
+        android:padding="8dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:ems="10"
+        android:digits="qwertyuiopasdfghjklzxcvbnm.QWERTYUIOPASDFGHJKKLZXCVBNM "
+        android:maxLength="25"
+        android:hint="Contact Name"
+        android:padding="8dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:ems="10"
+        android:maxLength="10"
+        android:inputType="number"
+        android:hint="Mobile"
+        android:layout_marginBottom="10dp"
+        android:padding="8dp"
+        android:textSize="14sp"
+        />
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

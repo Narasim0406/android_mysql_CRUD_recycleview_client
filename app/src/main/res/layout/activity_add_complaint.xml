@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.narasim.jm_solution_client.AddComplaintActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:background="@drawable/bg1"
+        android:padding="50dp">
+
+
+    <EditText
+        android:id="@+id/textViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:ems="10"
+        android:hint="ID"
+        android:padding="8dp"
+        android:visibility="gone"
+        android:editable="false"
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:id="@+id/textViewUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:ems="10"
+        android:hint="Username"
+        android:padding="8dp"
+        android:editable="false"
+        android:textSize="14sp"
+        android:visibility="gone"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:ems="10"
+        android:layout_marginBottom="10dp"
+        android:entries="@array/product_arrayedit"
+        android:hint="Product Type"
+        android:padding="8dp"
+        android:textSize="14sp"
+        ></Spinner>
+
+        <Spinner
+            android:id="@+id/spinnerModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:ems="10"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/model_arrayedit"
+            android:hint="Product Model"
+            android:padding="8dp"
+            android:textSize="14sp"
+            />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:ems="10"
+        android:layout_marginBottom="10dp"
+        android:hint="Quantity"
+        android:inputType="number"
+        android:maxLength="3"
+        android:padding="8dp"
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:editable="false"
+        android:ems="10"
+        android:layout_marginBottom="10dp"
+        android:hint="Expected Deliver Date"
+        android:padding="8dp"
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:digits="qwertyuiopasdfghjklzxcvbnm.QWERTYUIOPASDFGHJKLZXCVBNM "
+        android:ems="10"
+        android:layout_marginBottom="10dp"
+        android:hint="Contact Person Name"
+        android:maxLength="25"
+        android:padding="8dp"
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:ems="10"
+        android:layout_marginBottom="10dp"
+        android:hint="Mobile"
+        android:inputType="number"
+        android:maxLength="10"
+        android:padding="8dp"
+        android:textSize="14sp"
+        />
+
+    <EditText
+        android:id="@+id/remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:ems="10"
+        android:layout_marginBottom="10dp"
+        android:hint="Remark"
+        android:maxLength="150"
+        android:padding="8dp"
+        android:textSize="14sp"
+        />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:entries="@array/status_array"
+        android:padding="8dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="14sp"
+        android:visibility="gone"
+        ></Spinner>
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+
+    </LinearLayout>
+
+</RelativeLayout >
